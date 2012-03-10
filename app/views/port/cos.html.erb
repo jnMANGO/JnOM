@@ -1,0 +1,197 @@
+<!--<h1>Port#cos</h1>-->
+
+<!--<h1>Port#art</h1>-->
+
+<!--<h1>Main#portfolio</h1>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="description" content="JNoM Project Portfolio." />
+<meta name="keywords" content="portfolio, jnom" />
+
+<%= stylesheet_link_tag "jnomstyles" %>
+<%= favicon_link_tag "favicon.ico" %>
+
+
+ 
+<script type="text/javascript"> 
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+ 
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+ 
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script> 
+ 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> 
+ 
+ 
+<script type="text/javascript" src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+$(document).ready(function() {
+ 
+	/* This is basic - uses default settings */
+	
+	$("a#single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+		
+	});
+ 
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+	
+});
+ 
+function formatTitle(title, currentArray, currentIndex, currentOpts) {
+    return '<div id="tip7-title"><span><a href="javascript:;" onclick="$.fancybox.close();"><img src="/data/closelabel.gif" /></a></span>' + (title && title.length ? '<b>' + title + '</b>' : '' ) + 'Image ' + (currentIndex + 1) + ' of ' + currentArray.length + '</div>';
+}
+ 
+$(".tip7").fancybox({
+	'showCloseButton'	: false,
+	'titlePosition' 		: 'inside',
+	'titleFormat'		: formatTitle
+});
+ 
+</script> 
+ 
+
+</head>
+
+<body>
+
+      <div class="container">
+
+          <div class="container">  
+
+                
+                <div class="span-52 last" align="right" id="navigation"> <br> 
+                  <%= image_tag("logo01-a.png", :title=> "jnom logo", :height=>"60px") %>
+                  <%= link_to image_tag("nav01-a.png", :title=> "home", :height=>"60px", :mouseover=>"nav01-d.png"), main_home_path %>
+                  <%= link_to image_tag("nav02-a.png", :title=> "about", :height=>"60px", :mouseover=>"nav02-d.png"), main_about_path %>
+                  <%= link_to image_tag("nav03-a.png", :title=> "portfolio", :height=>"60px", :mouseover=>"nav03-d.png"), main_portfolio_path %>
+                  <%= link_to image_tag("nav04-a.png", :title=> "contact", :height=>"60px",:mouseover=>"nav04-d.png"), main_contact_path %>
+                </div>  
+                
+          </div>  
+        
+
+        <div id="header" class="span-24 last">
+
+          <h1 id="title"><%= image_tag "banner03-c.png", alt:"banner-img", id:"banner-img"  %></h1>
+                 <embed src="http://www.sheepproductions.com/billy/billy.swf?autoplay=true&loop=true&f0=http://k004.kiwi6.com/hotlink/6l9xqyx7en/kingdom_hearts_re_coded_ost_dearly_beloved.mp3&t0=Dearly%20Beloved%20(KH%20reCODED)&total=1" quality="high" wmode="transparent" width="200" height="10" name="jNom-bgm" align="right" type="application/x-shockwave-flash" />
+        </div>
+
+        <hr />
+
+        <div id="subheader" class="span-24 last">
+          <h3 class="alt">Cosplay Gallery</h3>
+        </div>
+
+        <hr />
+
+         <div class="span-3 colborder" align="left" id="sidebar"> 
+           <div class="box"> 
+                       <%= link_to image_tag("port00-a.png", :title=> "art", :height=>"60px", :mouseover=>"port00-d.png"), port_art_path %>
+                  <br> <%= link_to image_tag("port01-a.png", :title=> "design", :height=>"60px", :mouseover=>"port01-d.png"), port_des_path %>
+                  <br> <%= link_to image_tag("port02-a.png", :title=> "literature", :height=>"60px", :mouseover=>"port02-d.png"), port_lit_path %>
+                  <br> <%= link_to image_tag("port03-a.png", :title=> "videos", :height=>"60px", :mouseover=>"port03-d.png"), port_vid_path %>
+                  <br><br><br><br>
+            </div>
+        </div>  
+
+       
+        <div class="span-15  colborder" id="content">
+          <h3 class="loud">Previews</h3>
+          
+          <p align="center">
+          <%= image_tag "port/cos/cos001.jpg", :height=>"100px", :mouseover=>"port/cos/cos001-d.jpg" %>
+          <%= image_tag "port/cos/cos003.jpg", :height=>"100px", :mouseover=>"port/cos/cos003-d.jpg" %>
+          <%= image_tag "port/cos/cos004.jpg", :height=>"100px", :mouseover=>"port/cos/cos004-d.jpg" %> 
+          <%= image_tag "port/cos/cos002.jpg", :height=>"100px", :mouseover=>"port/cos/cos002-d.jpg" %>
+          <%= image_tag "port/cos/cos005.jpg", :height=>"100px", :mouseover=>"port/cos/cos005-d.jpg" %>
+          </p>
+          
+          <p align="justify"><br>
+              At present time, only PREVIEWS are available in this portfolio section. The reason for this being security and privacy concerns. Please rest assured that the webowner is presently working the technicalities, but this section shall be up in due time. Thank you very much for understanding. 
+          </p>
+          
+          <p align="justify">
+              Feel free to check back soon for updates!
+          </p>
+
+<!--
+<br>
+<a id="inline" href="cosplay/001.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('022','','cosplay/mini/022h.jpg',1)"><img src="cosplay/mini/022.jpg" name="022" width="100" height="100" border="0" id="022" /></a> 
+ 
+<a id="inline" href="cosplay/021.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('021','','cosplay/mini/021h.jpg',1)"><img src="cosplay/mini/021.jpg" name="021" width="100" height="100" border="0" id="021" /></a> 
+ 
+<a id="inline" href="cosplay/020.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('020','','cosplay/mini/020h.jpg',1)"><img src="cosplay/mini/020.jpg" name="020" width="100" height="100" border="0" id="020" /></a> 
+ 
+<a id="inline" href="cosplay/019.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('019','','cosplay/mini/019h.jpg',1)"><img src="cosplay/mini/019.jpg" name="019" width="100" height="100" border="0" id="019" /></a> 
+ 
+<a id="inline" href="cosplay/018.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('018','','cosplay/mini/018h.jpg',1)"><img src="cosplay/mini/018.jpg" name="018" width="100" height="100" border="0" id="018" /></a> 
+-->
+  
+<br><br><br><br><br><br><br>
+        </div>
+
+<div class="span-3" align="right" id="sidebar"> 
+           <div class="box"> 
+                       <%= link_to image_tag("port04-a.png", :title=> "music", :height=>"60px", :mouseover=>"port04-d.png"), port_music_path %>
+                  <br> <%= link_to image_tag("port05-a.png", :title=> "blogs", :height=>"60px",:mouseover=>"port05-d.png"), port_blogs_path %>
+                  <br> <%= link_to image_tag("port06-a.png", :title=> "photography", :height=>"60px",:mouseover=>"port06-d.png"), port_photog_path %>
+                  <br> <%= link_to image_tag("port07-a.png", :title=> "cosplay", :height=>"60px",:mouseover=>"port07-d.png"), port_cos_path %>
+                  
+            </div>
+        </div>  
+
+  <hr />
+
+          <div class="span-24 small" align="center">
+              <p><h4 class="quiet">Juno Magno © 2012</h4>
+                
+                <h4 class="mid">The JNoM Project, all work and characters contained therein, is the intellectual property of Juno Magno unless specified otherwise. All rights reserved. <BR>No portion of this online work may be published, transmitted, or distributed in any medium without the express written permission of the author.</h4></p>
+          </div>        
+</body>
+</html>
+
+<!--<p>Find me in app/views/main/portfolio.html.erb</p>-->
+
+
+<!--<p>Find me in app/views/port/art.html.erb</p>-->
+
+
+<!--<p>Find me in app/views/port/cos.html.erb</p>-->

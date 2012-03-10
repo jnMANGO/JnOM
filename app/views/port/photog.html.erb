@@ -1,0 +1,101 @@
+<!--<h1>Port#photog</h1>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="description" content="JNoM Project Portfolio." />
+<meta name="keywords" content="portfolio, jnom" />
+
+<%= stylesheet_link_tag "jnomstyles" %>
+<%= favicon_link_tag "favicon.ico" %>
+
+</head>
+
+<body>
+
+      <div class="container">
+
+          <div class="container">  
+
+                
+                <div class="span-52 last" align="right" id="navigation"> <br> 
+                  <%= image_tag("logo01-a.png", :title=> "jnom logo", :height=>"60px") %>
+                  <%= link_to image_tag("nav01-a.png", :title=> "home", :height=>"60px", :mouseover=>"nav01-d.png"), main_home_path %>
+                  <%= link_to image_tag("nav02-a.png", :title=> "about", :height=>"60px", :mouseover=>"nav02-d.png"), main_about_path %>
+                  <%= link_to image_tag("nav03-a.png", :title=> "portfolio", :height=>"60px", :mouseover=>"nav03-d.png"), main_portfolio_path %>
+                  <%= link_to image_tag("nav04-a.png", :title=> "contact", :height=>"60px",:mouseover=>"nav04-d.png"), main_contact_path %>
+                </div>  
+                
+          </div>  
+        
+
+        <div id="header" class="span-24 last">
+
+          <h1 id="title"><%= image_tag "banner03-c.png", alt:"banner-img", id:"banner-img"  %></h1>
+                 <embed src="http://www.sheepproductions.com/billy/billy.swf?autoplay=true&loop=true&f0=http://k004.kiwi6.com/hotlink/6l9xqyx7en/kingdom_hearts_re_coded_ost_dearly_beloved.mp3&t0=Dearly%20Beloved%20(KH%20reCODED)&total=1" quality="high" wmode="transparent" width="200" height="10" name="jNom-bgm" align="right" type="application/x-shockwave-flash" />
+        </div>
+
+        <hr />
+
+        <div id="subheader" class="span-24 last">
+          <h3 class="alt">Photography Gallery</h3>
+        </div>
+
+        <hr />
+
+         <div class="span-3 colborder" align="left" id="sidebar"> 
+           <div class="box"> 
+                       <%= link_to image_tag("port00-a.png", :title=> "art", :height=>"60px", :mouseover=>"port00-d.png"), port_art_path %>
+                  <br> <%= link_to image_tag("port01-a.png", :title=> "design", :height=>"60px", :mouseover=>"port01-d.png"), port_des_path %>
+                  <br> <%= link_to image_tag("port02-a.png", :title=> "literature", :height=>"60px", :mouseover=>"port02-d.png"), port_lit_path %>
+                  <br> <%= link_to image_tag("port03-a.png", :title=> "videos", :height=>"60px", :mouseover=>"port03-d.png"), port_vid_path %>
+                  <br><br><br><br>
+            </div>
+        </div>  
+
+       
+        <div class="span-15  colborder" id="content">
+          <!--   <h3 class="loud">UNDER CONSTRUCTION</h3> -->
+          
+          <p align="center">
+                <%= image_tag "gen01-UnCo.png", :height=>"200px" %>
+          </p>
+                    
+          <p align="justify"><br>
+              The content on this page has not been made available at this time at the webmaster's discretion. This gallery is locked from public access. However, please not that this decision is only temporary and this section of the portfolio will soon be open for viewing once all technicalities have been cleared. Thank you for understanding. 
+          </p>
+          
+          <p align="justify">
+              For now, feel free to visit the <%= link_to "Art Gallery", port_art_path%>, <%= link_to "Design Gallery", port_des_path%>, <%= link_to "Blog Roster", port_blogs_path%>, or <%= link_to "Cosplay Gallery", port_cos_path%>.
+          </p>
+          
+          <p align="justify">
+              Feel free to check back soon for updates! 
+          </p>
+
+<br><br><br><br><br><br><br>
+        </div>
+
+<div class="span-3" align="right" id="sidebar"> 
+           <div class="box"> 
+                       <%= link_to image_tag("port04-a.png", :title=> "music", :height=>"60px", :mouseover=>"port04-d.png"), port_music_path %>
+                  <br> <%= link_to image_tag("port05-a.png", :title=> "blogs", :height=>"60px",:mouseover=>"port05-d.png"), port_blogs_path %>
+                  <br> <%= link_to image_tag("port06-a.png", :title=> "photography", :height=>"60px",:mouseover=>"port06-d.png"), port_photog_path %>
+                  <br> <%= link_to image_tag("port07-a.png", :title=> "cosplay", :height=>"60px",:mouseover=>"port07-d.png"), port_cos_path %>
+                  
+            </div>
+        </div>  
+
+  <hr />
+
+          <div class="span-24 small" align="center">
+              <p><h4 class="quiet">Juno Magno © 2012</h4>
+                
+                <h4 class="mid">The JNoM Project, all work and characters contained therein, is the intellectual property of Juno Magno unless specified otherwise. All rights reserved. <BR>No portion of this online work may be published, transmitted, or distributed in any medium without the express written permission of the author.</h4></p>
+          </div>        
+</body>
+</html>
+
+<!--<p>Find me in app/views/port/photog.html.erb</p>-->

@@ -1,0 +1,100 @@
+<!--<h1>Main#about</h1>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="description" content="JNoM Project About Page." />
+<meta name="keywords" content="about, jnom" />
+
+<%= stylesheet_link_tag "jnomstyles" %>
+<%= favicon_link_tag "favicon.ico" %>
+
+</head>
+
+<body>
+
+      <div class="container">
+
+          <div class="container">  
+
+                
+                <div class="span-52 last" align="right" id="navigation"> <br> 
+                  <%= image_tag("logo01-a.png", :title=> "jnom logo", :height=>"60px") %>
+                  <%= link_to image_tag("nav01-a.png", :title=> "home", :height=>"60px", :mouseover=>"nav01-d.png"), main_home_path %>
+                  <%= link_to image_tag("nav02-a.png", :title=> "about", :height=>"60px", :mouseover=>"nav02-d.png"), main_about_path %>
+                  <%= link_to image_tag("nav03-a.png", :title=> "portfolio", :height=>"60px", :mouseover=>"nav03-d.png"), main_portfolio_path %>
+                  <%= link_to image_tag("nav04-a.png", :title=> "contact", :height=>"60px",:mouseover=>"nav04-d.png"), main_contact_path %>
+                </div>  
+                
+          </div>  
+        
+
+        <div id="header" class="span-24 last">
+
+          <h1 id="title"><%= image_tag "banner03-c.png", alt:"banner-img", id:"banner-img"  %></h1>
+               <embed src="http://www.sheepproductions.com/billy/billy.swf?autoplay=true&loop=true&f0=http://k004.kiwi6.com/hotlink/6l9xqyx7en/kingdom_hearts_re_coded_ost_dearly_beloved.mp3&t0=Dearly%20Beloved%20(KH%20reCODED)&total=1" quality="high" wmode="transparent" width="200" height="10" name="jNom-bgm" align="right" type="application/x-shockwave-flash" />
+        </div>
+
+        <hr />
+
+        <div id="subheader" class="span-24 last">
+          <h3 class="alt">About</h3>
+        </div>
+
+        <hr />
+
+      
+      <div class="span-5 colborder" id="sidebar">
+            <div class="box">
+            
+            <h4 class="quiet">ARCHIVES</h4>
+              <div class="mid"><%= link_to image_tag("abou01-a.png", :title=> "the jnm profile", :height=>"60px", :mouseover=>"abou01-d.png"), about_profile_path %></div>
+              <div class="mid"><%= link_to image_tag("abou02-a.png", :title=> "copyright and disclaimers", :height=>"60px", :mouseover=>"abou02-d.png"), about_legal_path %></div>
+              <div class="mid"><%= link_to image_tag("abou03-a.png", :title=> "frequently asked questions", :height=>"60px", :mouseover=>"abou03-d.png"), about_faqs_path %></div>
+              
+              <br><br>
+                                  
+            </div>
+        </div>
+        
+        <div class="span-15" id="content">
+          <h3 class="loud">What do you want to know?</h3>
+          <p align="justify">
+              Hi again. Since this page is where you ended up, I'm guessing there's something you're curious about? Well, you're obviously in the right place. On the lefthand side of the page, you might notice the archives. Stored there is a list of links that will direct you to the different subtopics of this page. You should be able to find what you need there.
+          </p>
+
+          <p align="justify">
+              By hitting the <strong>Profile</strong> tab, you'll be given access to several basic information about the webowner of this site. That being myself. Like I earlier mentioned, there will be only basic information on there, but they should prove useful enough for the purpose of this site. Should you go to the <strong>Legal</strong> tab, you will find the law-bound formalities of Copyright, Terms of Use, Privacy Policy, and Disclaimers. You can also head over to the <strong>FAQs</strong> tab to check if some of your curiosities about this site have already been answered there.
+          </p>
+          
+          <p align="justify">
+              If by chance your questions <i>don't</i> have any answers in the sub-pages here, then feel free to navigate to the <%= link_to "Contact Page", main_contact_path %> to send me your inquiries directly; or you can find out other ways to get in touch with me in the links there. I'll be happy to clear up anything you might be confused with concerning this site the best way I can.
+          </p>
+        </div>
+        
+         <hr />
+        
+        <div class="span-24 small" align="center">
+              <p><h4 class="quiet">Juno Magno © 2012</h4>
+                
+                <h4 class="mid">The JNoM Project, all work and characters contained therein, is the intellectual property of Juno Magno unless specified otherwise. All rights reserved. <BR>No portion of this online work may be published, transmitted, or distributed in any medium without the express written permission of the author.</h4>
+                
+              </p>
+              
+              <p align="center">
+                <%= link_to "Home", main_home_path %> | <%= link_to "About", main_about_path %> |
+                <%= link_to "Portfolio", main_portfolio_path %> |  <%= link_to "Contact", main_contact_path %> |
+                
+                <%= link_to "FAQs", about_faqs_path %> |  <%= link_to "Legal Terms", about_legal_path %>
+                
+               </p>
+          </div>
+
+        
+</body>
+</html>
+
+<!--<p>Find me in app/views/main/about.html.erb</p>-->
+

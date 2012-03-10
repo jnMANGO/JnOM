@@ -1,0 +1,141 @@
+<!--<h1>Main#home</h1> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="description" content="JNoM Project Homepage." />
+<meta name="keywords" content="home, jnom" />
+
+<%= stylesheet_link_tag "jnomstyles" %>
+
+
+</head>
+
+<body>
+
+      <div class="container">
+
+          <div class="container">  
+<%= favicon_link_tag "favicon.ico" %>
+            
+                <div class="span-52 last" align="right" id="navigation"> <br> 
+                  <%= image_tag("logo01-a.png", :title=> "jnom logo", :height=>"60px") %>
+                  <%= link_to image_tag("nav01-a.png", :title=> "home", :height=>"60px", :mouseover=>"nav01-d.png"), main_home_path %>
+                  <%= link_to image_tag("nav02-a.png", :title=> "about", :height=>"60px", :mouseover=>"nav02-d.png"), main_about_path %>
+                  <%= link_to image_tag("nav03-a.png", :title=> "portfolio", :height=>"60px", :mouseover=>"nav03-d.png"), main_portfolio_path %>
+                  <%= link_to image_tag("nav04-a.png", :title=> "contact", :height=>"60px",:mouseover=>"nav04-d.png"), main_contact_path %>
+                </div>  
+                
+          </div>  
+        
+
+        <div id="header" class="span-24 last">
+
+          <h1 id="title"><%= image_tag "banner03-c.png", alt:"banner-img", id:"banner-img"  %></h1>
+                <embed src="http://www.sheepproductions.com/billy/billy.swf?autoplay=true&loop=true&f0=http://k004.kiwi6.com/hotlink/6l9xqyx7en/kingdom_hearts_re_coded_ost_dearly_beloved.mp3&t0=Dearly%20Beloved%20(KH%20reCODED)&total=1" quality="high" wmode="transparent" width="200" height="10" name="jNom-bgm" align="right" type="application/x-shockwave-flash" />
+        </div>
+
+        <hr />
+
+        <div id="subheader" class="span-24 last">
+          <h3 class="alt">Home</h3>
+        </div>
+
+        <hr />
+
+
+    <div class="span-17 colborder" id="content">
+          <h3 class="loud">Hello, and welcome. I'm Juno.</h3>
+          <p align="justify">        
+              As you might have noticed, you've stumbled upon the <strong>JNoM Project</strong>. This, in fact, is a personal website designed and developed as partial requirement for completion of my programming class in freshman year, college. Truth be told, this project has gone through several redesigns before ending up at this stage, and though it was admittedly a taxing process--I had fun throughout, and I'm pretty happy with how this turned out. It has clean, simple interface and an elegant, minimalist design. True, it's very simple and bare right now, but despite everything, I'm quite proud of this. I'll definitely be working to further perfect it. With enough time, it should turn out even better.
+          </p>
+              
+          <p align="justify"> 
+              Basically, as of the moment, you won't really find anything too structured or useful here. Besides the source code, haha, I'll admit I can get pretty strict with my own programming. Regardless, if you care to take a look around, you'll find that there's just a compilation of my sketch art or literary works, at the least. But while you're here anyway, rest assured that I shall do my best to entertain you with my collection.  
+          </p>
+
+          <p align="justify">
+              We've got poetry and prose in stock here, so feel free to navigate to the portfolio page and look around as you please. As it was necessary, an about page has also been set up for your viewing. Just head on over there if you want to know anything about me, though I guess I should tell you now that there won't be much information there either. Privacy matters and all. Right now, this is only an assignment after all. Moving on, there's also a contact page, which will basically link you to my accounts outside this website to make it easier for us to keep in touch. Again, nothing too personal right now, since it's only proper to keep sensitive information secure. 
+              
+          </p>
+
+          <hr />
+          <div class="span-8 colborder">
+            <h4 class="prepend-5">News</h4>
+            <p align= "justify"><blockquote>Initial Placeholder Set [04:03:12]</blockquote>
+              Ah, well. There really isn't anything new going on per se, given that this is a newly deployed website with almost zero traffic. But this is where the news related in any way to the site at all will go.
+            </p>
+          </div>
+
+          <div class="span-8 last">
+            <h4 class="prepend-5">Updates</h4>
+            <p>
+               <li>  <i> [030412] 21:37:19 PT </i> - Finished overall web structure </li> 
+               <li>  <i> [030512] 19:21:32 PT </i> - Created necessary subroutes  </li>
+               <li>  <i> [030612] 13:15:20 PT </i> - Accomplished placeholder content  </li>             <li>  <i> [030812] 23:45:56 PT </i> - Completed full website  </li>
+               <li>  <i> [030912] 00:50:00 PT </i> - Testing stage concluded  </li>
+               <li>  <i> [031012] 03:10:12 PT </i> - JNoM Project goes live  </li>
+            </p>
+          </div>
+        </div>
+
+        <div class="span-6 last" id="sidebar">
+
+          <div id="site versions">
+            <h3 class="caps">Site Version</h3>
+
+            <div class="box">
+                          
+              <%=link_to "JNoM :brightVERSION 1.0", main_home_path  %>
+              <div class="mid">Finalized March 2012</div>
+              <div class="mid">by Mango</div>
+              
+              <p>
+                <blockquote> This is the sidebar of the homepage.
+                             There should be enough space here to place various
+                             content that can help make the page seem more alive.
+                             Right now, though, some placeholder text will have to do.
+                </blockquote>
+              </p>
+            </div>
+
+          </div>
+
+    <!--  <div class="prepend-top" id="misc">
+            <h3 class="caps">Misc Links</h3>
+            <div class="box">
+              <span class="mid">People you might want to visit:</span>
+                <li><%=link_to "AFFILATE", main_home_path %></li>
+                <li><%=link_to "AFFILATE", main_home_path %></li>
+                <li><%=link_to "AFFILATE", main_home_path %></li>
+            </div>
+
+          </div> -->
+
+        </div>
+
+        <hr />
+        
+        
+          <div class="span-24 small" align="center">
+              <p><h4 class="quiet">Juno Magno © 2012</h4>
+                            
+                <h4 class="mid">The JNoM Project, all work and characters contained therein, is the intellectual property of Juno Magno unless specified otherwise. All rights reserved. <BR>No portion of this online work may be published, transmitted, or distributed in any medium without the express written permission of the author.</h4>
+                
+              </p>
+              
+              <p align="center">
+                <%= link_to "Home", main_home_path %> | <%= link_to "About", main_about_path %> |
+                <%= link_to "Portfolio", main_portfolio_path %> |  <%= link_to "Contact", main_contact_path %> |
+                
+                <%= link_to "FAQs", about_faqs_path %> |  <%= link_to "Legal Terms", about_legal_path %> </p>
+                
+          </div>
+
+
+    
+
+</body>
+<!-- <p>Find me in app/views/main/home.html.erb</p> -->

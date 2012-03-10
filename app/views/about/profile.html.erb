@@ -1,0 +1,116 @@
+<!--<h1>About#profile</h1>-->
+
+<!--<h1>Main#about</h1>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="description" content="JNoM Project About Page." />
+<meta name="keywords" content="about, jnom" />
+
+<%= stylesheet_link_tag "jnomstyles" %>
+<%= favicon_link_tag "favicon.ico" %>
+
+</head>
+
+<body>
+
+      <div class="container">
+
+          <div class="container">  
+
+                
+                <div class="span-52 last" align="right" id="navigation"> <br> 
+                  <%= image_tag("logo01-a.png", :title=> "jnom logo", :height=>"60px") %>
+                  <%= link_to image_tag("nav01-a.png", :title=> "home", :height=>"60px", :mouseover=>"nav01-d.png"), main_home_path %>
+                  <%= link_to image_tag("nav02-a.png", :title=> "about", :height=>"60px", :mouseover=>"nav02-d.png"), main_about_path %>
+                  <%= link_to image_tag("nav03-a.png", :title=> "portfolio", :height=>"60px", :mouseover=>"nav03-d.png"), main_portfolio_path %>
+                  <%= link_to image_tag("nav04-a.png", :title=> "contact", :height=>"60px",:mouseover=>"nav04-d.png"), main_contact_path %>
+                </div>  
+                
+          </div>  
+        
+
+        <div id="header" class="span-24 last">
+
+          <h1 id="title"><%= image_tag "banner03-c.png", alt:"banner-img", id:"banner-img"  %></h1>
+               <embed src="http://www.sheepproductions.com/billy/billy.swf?autoplay=true&loop=true&f0=http://k004.kiwi6.com/hotlink/6l9xqyx7en/kingdom_hearts_re_coded_ost_dearly_beloved.mp3&t0=Dearly%20Beloved%20(KH%20reCODED)&total=1" quality="high" wmode="transparent" width="200" height="10" name="jNom-bgm" align="right" type="application/x-shockwave-flash" />
+        </div>
+
+        <hr />
+
+        <div id="subheader" class="span-24 last">
+          <h3 class="alt">The JNM Profile</h3>
+        </div>
+
+        <hr />
+
+      
+      <div class="span-5 colborder" id="sidebar">
+            <div class="box">
+            
+            <h4 class="quiet">ARCHIVES</h4>
+              <div class="mid"><%= link_to image_tag("abou01-a.png", :title=> "the jnm profile", :height=>"60px", :mouseover=>"abou01-d.png"), about_profile_path %></div>
+              <div class="mid"><%= link_to image_tag("abou02-a.png", :title=> "copyright and disclaimers", :height=>"60px", :mouseover=>"abou02-d.png"), about_legal_path %></div>
+              <div class="mid"><%= link_to image_tag("abou03-a.png", :title=> "frequently asked questions", :height=>"60px", :mouseover=>"abou03-d.png"), about_faqs_path %></div>
+      
+              <br><br><br><br><br><br>
+                                              
+            </div>
+        </div>
+        
+        <div class="span-15" id="content">
+          <h3 class="loud">Basic Information</h3>
+        
+          <%= image_tag "un01.png", :align=>"left" %>
+            <p align="justify">
+              ____<strong> Juno Magno</strong>. 17 years old.
+              
+          </p>
+
+          <p align="justify">
+              ____ Student. Programmer. Graphic Artist. 
+            <br> ____ Currently studying freshman BSIT in Our Lady of Fatima University.
+             <br> ____ Presently employed at Ormagn Enterprises in freelance creative design.
+          </p>
+          
+          <p align="justify">
+             <br>As a graphic artist, I deal in various media production and multimedia application, including: AVP Production, Layout and Design (web, newsletter, flyers and posters, etc.), and other CG-related content. I work with software like Adobe Photoshop (5 years), Adobe Illustrator (2 years), Adobe Dreamweaver (3 years), Adobe After Effects (2 years), Final Cut Pro (1 year), and Apple iMovie (1 year).
+             <br>
+             <br>As a programmer, I currently possess knowledge in C and C++ Languages.
+             <br>I also have experience in HTML5, CSS, Ruby on Rails, as well as some Php and JavaScript.
+             <br>
+             <br>I delve in literature, photography and illustration as my hobbies.
+             <br>I also possess a healthy enthusiasm towards cosplay, animation, music, and gaming. 
+            <br>
+            <br>If you want to know more about me or my works, you may <%= link_to "contact me", main_contact_path %>.
+          </p>
+          
+        </div>
+        
+         <hr />
+        
+        <div class="span-24 small" align="center">
+              <p><h4 class="quiet">Juno Magno © 2012</h4>
+                
+                <h4 class="mid">The JNoM Project, all work and characters contained therein, is the intellectual property of Juno Magno unless specified otherwise. All rights reserved. <BR>No portion of this online work may be published, transmitted, or distributed in any medium without the express written permission of the author.</h4></p>
+                
+              
+              <p align="center">
+                <%= link_to "Home", main_home_path %> | <%= link_to "About", main_about_path %> |
+                <%= link_to "Portfolio", main_portfolio_path %> |  <%= link_to "Contact", main_contact_path %> |
+                
+                <%= link_to "FAQs", about_faqs_path %> |  <%= link_to "Legal Terms", about_legal_path %> </p>
+          </div>
+
+        
+</body>
+</html>
+
+<!--<p>Find me in app/views/main/about.html.erb</p>-->
+
+
+
+<!--<p>Find me in app/views/about/profile.html.erb</p>-->

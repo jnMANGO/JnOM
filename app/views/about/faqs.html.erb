@@ -1,0 +1,176 @@
+<!--<h1>About#faqs</h1>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="description" content="JNoM Project About Page." />
+<meta name="keywords" content="about, jnom" />
+
+<%= stylesheet_link_tag "jnomstyles" %>
+<%= favicon_link_tag "favicon.ico" %>
+
+</head>
+
+<body>
+
+      <div class="container">
+
+          <div class="container">  
+
+                
+                <div class="span-52 last" align="right" id="navigation"> <br> 
+                  <%= image_tag("logo01-a.png", :title=> "jnom logo", :height=>"60px") %>
+                  <%= link_to image_tag("nav01-a.png", :title=> "home", :height=>"60px", :mouseover=>"nav01-d.png"), main_home_path %>
+                  <%= link_to image_tag("nav02-a.png", :title=> "about", :height=>"60px", :mouseover=>"nav02-d.png"), main_about_path %>
+                  <%= link_to image_tag("nav03-a.png", :title=> "portfolio", :height=>"60px", :mouseover=>"nav03-d.png"), main_portfolio_path %>
+                  <%= link_to image_tag("nav04-a.png", :title=> "contact", :height=>"60px",:mouseover=>"nav04-d.png"), main_contact_path %>
+                </div>  
+                
+          </div>  
+        
+
+        <div id="header" class="span-24 last">
+
+          <h1 id="title"><%= image_tag "banner03-c.png", alt:"banner-img", id:"banner-img"  %></h1>
+               <embed src="http://www.sheepproductions.com/billy/billy.swf?autoplay=true&loop=true&f0=http://k004.kiwi6.com/hotlink/6l9xqyx7en/kingdom_hearts_re_coded_ost_dearly_beloved.mp3&t0=Dearly%20Beloved%20(KH%20reCODED)&total=1" quality="high" wmode="transparent" width="200" height="10" name="jNom-bgm" align="right" type="application/x-shockwave-flash" />
+        </div>
+
+        <hr />
+
+        <div id="subheader" class="span-24 last">
+          <h3 class="alt">Frequently Asked Questions</h3>
+        </div>
+
+        <hr />
+
+      
+      <div class="span-5 colborder" id="sidebar">
+            <div class="box">
+            
+            <h4 class="quiet">ARCHIVES</h4>
+              <div class="mid"><%= link_to image_tag("abou01-a.png", :title=> "the jnm profile", :height=>"60px", :mouseover=>"abou01-d.png"), about_profile_path %></div>
+              <div class="mid"><%= link_to image_tag("abou02-a.png", :title=> "copyright and disclaimers", :height=>"60px", :mouseover=>"abou02-d.png"), about_legal_path %></div>
+              <div class="mid"><%= link_to image_tag("abou03-a.png", :title=> "frequently asked questions", :height=>"60px", :mouseover=>"abou03-d.png"), about_faqs_path %></div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                          
+            </div>
+        </div>
+        
+        <div id="subheader" class="span-15 last">
+          <h3 class="alt">Technical Questions</h3>
+          <hr />
+        </div>
+                
+        <div class="span-15" id="content">
+          <h3 class="loud">Could you explain the main purpose of this site?</h3>
+          <p align="justify">
+              As earlier mentioned, the JNoM project is a personal website designed and developed as partial requirement for completion of my programming class in freshman year, college. To that effect, it also serves as a personal portfolio with a variety of music, literature and art to be showcased personally by yours truly.
+          </p>
+          
+          <h3 class="loud">Did you design/develop this website yourself?</h3>
+          <p align="justify">
+              Yes, indeed I did. Members of a basic Website Design and Development Team would normally include: the project manager, the webmaster, the application developer, the systems administrator, and the graphic artist. For this project, however, a single individual (that being myself, of course) has covered all these roles for the purpose of accomplishing this given website project. 
+          </p>
+
+          <h3 class="loud">How long did it take you to finish the site?</h3>
+          <p align="justify">
+              The creation of this site can be divided into two stages: alpha and beta testing. Alpha comprised of first familiarizing with the instruments to be used in development. Learning the different languages (HTML5, CSS, Ruby) and tools (Rails, Mockflow) used for development took well over three weeks through testing, experimenting, and exploring. Afterwards, Beta would comprise of development of the actual site, which originally went through several redesigns before arriving at the conclusion with this minimalist personal site: the JNoM Project. Overall web structure and basic design elements took about two days to accomplish (meaning finishing about 90% of the site in that duration). Finishing touches, tweaks, and misc. content input followed after in a span of five more days. This means the actual site you see now took around one week to reach completion.
+          </p>
+        
+          <h3 class="loud">What tools/languages did you use to accomplish this project?</h3>
+          <p align="justify">
+              The development of this website predominantly incorporates the use of HTML5, Blueprint CSS, and a Ruby on Rails framework. Graphic design and prototyping required the use of several editor software, including Adobe Photoshop CS 5.5, ColorSchemer Studio, and MockFlow. Testing was conducted in Google Chrome v11.0.696.65 and Mozilla Firefox v6.0. Browser plug-ins used to aid in this project include FireBug and the WebDev Toolbar. Possible use of embedded content, JavaScript, and Php are also be noted where necessary.
+          </p>
+  
+          <h3 class="loud">What would be the best settings to view this site with?</h3>
+          <p align="justify">
+              For optimum visual display, it would be safest to use the latest versions of either Google Chrome of Mozilla Firefox to ensure HTML5 support. CSS implementation, however, has been arranged to allow design resets that will cope with lesser versions of other browsers as not to compromise site accessibility. Beta stage of the website will not require plug-ins for flash content, but this may change in the future. A screen resolution of 1280 x 800 was used for testing the website. Colours may vary from one monitor unit to another, but colour palette standards were used for this web project.
+          </p>
+          
+          <h3 class="loud">How would you describe the accessibility of this website?</h3>
+          <p align="justify">
+              As mentioned above, for optimum website navigation, the use of the latest versions of popular browsers would be recommended to ensure support for the language the site is written and to cater to any possible future modifications. Bandwidth load should be reduced significantly by the clean, simplistic structure of this webapp. Deployment has been placed under the moderation of the EngineYard web hosting environment, initially under free/trial subscription for the live testing phase of the Rails app. It will be expected that there will be relatively low-traffic in the earlier stages of deployment, but the site will definitely be fully accessible for academic purposes.
+          </p>
+          
+          <h3 class="loud">How did you work with the overall design/colorscheme of the site?</h3>
+          <p align="justify">
+              No automatic code generating software was allowed in the creation of this website, so the entire design is arranged and hardcoded using Blueprint CSS, a webdesign framework. This allowed for using divs and such to arrange the various content in the different pages of this web development project. The color palette used in the design was extracted from the banner image using ColorSchemer Pro to match the entire theme of the site.
+          </p>
+          
+          <h3 class="loud">How long have you been working in programming and web development?</h3>
+          <p align="justify">
+              Since both in the question were part of my highschool curriculum, I would say I started learning since my first year in secondary school.
+              Having been taught to write HTML in freshman year, and trained to manage a webdevelopment project by senior year, both helped me advance
+              in this project a bit faster than I would have been able to otherwise. Also, having been employed as a graphic artist since 2011, I've gained some actual work experience in webdesign as well after being hired to assist the company's Creative Director with a client's website development commission. That would mean I have been playing around with these concepts for around four to five years now, including this project in freshman college.
+          </p>
+          
+          <h3 class="loud">Will you be willing to take commissions for webdevelopment in the future?</h3>
+          <p align="justify">
+              Of course! As a working student, I take every opportunity I can to earn, especially if it means I will be allowed to help another person in the process. Although I am currently employed as a graphic artist, I also freelance in taking up commissions for any potential client. I will take anything that is within my ability, not just web development, including layout and design and avp production.
+          </p>
+          
+        <hr />
+         
+          <div id="subheader" class="span-15 last">
+          <h3 class="alt">Miscellaneous Questions</h3>
+          <hr />
+        </div>
+                
+        <div class="span-15" id="content">
+          <h3 class="loud">Are you really just a college freshman?</h3>
+          <p align="justify">
+              That is the truth, yes. I am but a seventeen-year old student of BS Information Technology, and this website as a whole is merely a school project in the second term of my first year. As was earlier mentioned, the JNoM project was made to fulfill partial completion of the requirements of one of my programming subjects.
+          </p>
+          
+           <h3 class="loud">How did you choose the background music of the site?</h3>
+          <p align="justify">
+              Dearly Beloved, Kingdom Hearts re:CODED version was composed by Yoko Shimomura for the game's Original Sound Track. I chose this track to play on my website distinctly because of the sense of peace and safety it gives me, personally. I'm hoping it will also have a similar effect on my guests. I think it is very beautiful music, and it suits the theme of the site quite nicely. Just to be safe, however, I must repeat that I claim no ownership over this piece and intend no copyright infringement in using it for this project.  
+          </p>
+          
+          <h3 class="loud">Why does the banner say "juno the mango loves strawberries"?</h3>
+          <p align="justify">
+              First, the "Mango" part is simply a pseudonym of my real name; and second, I really do love strawberries. Basically, that signifies the theme of this website as well as my online alias here. In reality, however, since the "strawberry" part seems to be unrelated to this site at all--my project originally intended to be the RbE project: or Rueberry Entropy, which is a site dedicated to everything related to strawberries. It would have been designed after the microsite I own, Rueberry. You may find the link in the <%= link_to "blog", port_blogs_path %> section.          </p>
+            
+          <h3 class="loud">Can I add you on Facebook/Twitter/deviantArt/Cure/Gaia?</h3>
+          <p align="justify">
+              Within reason, I might consider. Please note however that I do not add random strangers into my account, so it would be much appreciated if you first send me a message explaining how you found my account and why you wish to add me as a friend on that website. I will not acknowledge any requests otherwise. Feel free to +watch my account on dA and follow my Cure account, however--they're mostly artistic sites.
+          </p>
+          
+          <h3 class="loud">Why are there no photos of you in the About Me page?</h3>
+          <p align="justify">
+              For privacy concerns. Although I've uploaded several artistic photographs in the portfolio for previewing purposes only. You may navigate to them <%= link_to "here", port_cos_path%> if you wish. Moving your cursor over the images will also give you additional information about the photos, if only minimal. If that does not satisfy you, you may look for my third-party accounts <%= link_to "outside", main_contact_path %> this website.
+          </p>
+          
+          <h3 class="loud">Can I use material from your portfolio?</h3>
+          <p align="justify">
+              You are NOT allowed to do that. Under no circumstances will I allow any use of material from my personal galleries. Please respect this. If I should find any violation to this rule, I will have to resort to legal action. Please refer to the <%= link_to "Copyright Notice", about_legal_path %> and other legal terms for more details.
+          </p>
+         
+        </div>
+          
+        </div>
+        
+        
+        
+         <hr />
+        
+        <div class="span-24 small" align="center">
+              <p><h4 class="quiet">Juno Magno © 2012</h4>
+                
+                <h4 class="mid">The JNoM Project, all work and characters contained therein, is the intellectual property of Juno Magno unless specified otherwise. All rights reserved. <BR>No portion of this online work may be published, transmitted, or distributed in any medium without the express written permission of the author.</h4></p>
+                
+                <p align="center">
+                <%= link_to "Home", main_home_path %> | <%= link_to "About", main_about_path %> |
+                <%= link_to "Portfolio", main_portfolio_path %> |  <%= link_to "Contact", main_contact_path %> |
+                
+                <%= link_to "FAQs", about_faqs_path %> |  <%= link_to "Legal Terms", about_legal_path %> </p>
+          </div>
+
+        
+</body>
+</html>
+
+<!--<p>Find me in app/views/about/faqs.html.erb</p>-->
